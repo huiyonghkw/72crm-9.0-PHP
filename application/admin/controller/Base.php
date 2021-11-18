@@ -69,7 +69,7 @@ class Base extends Common
         if (Request::instance()->isOptions()) {
             return ;
         } else {
-            echo '悟空软件';
+            echo '欢迎使用希格斯CRM系统，请访问正确的操作路径...';
         }
     }
 }
