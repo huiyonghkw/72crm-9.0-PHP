@@ -25,7 +25,7 @@ class Common extends Controller
         header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
         header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, authKey, sessionId");
         $param = Request::instance()->param(); 
-        $platform = $param['platform'] ? '_'.$param['platform'] : ''; //请求平台(mobile,ding)         
+        $platform = isset($param['platform']) ? '_'.$param['platform'] : ''; //请求平台(mobile,ding)         
         unset($param['platform']);         
         $this->param = $param;   
         $request = request();
