@@ -31,7 +31,7 @@
       <div class="auth-content">
         <div class="title">您暂未开通授权</div>
         <div class="detail">为了给您提供更好的服务支持<br>建议您购买官方授权</div>
-        <span class="phone">400-0812-558</span>
+        <span class="phone">18784440886</span>
       </div>
       <button
         slot="reference"

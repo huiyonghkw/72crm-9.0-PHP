@@ -1,2 +1,4 @@
 runtime/*
 config/install.lock
+*.DS_Store
+.DS_Store

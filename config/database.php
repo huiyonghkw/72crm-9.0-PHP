@@ -7,9 +7,9 @@ return [
     // 数据库名
     'database'        => '5kcrm_dev',
     // 用户名
-    'username'        => 'root',
+    'username'        => '5kcrm_dev_adminer',
     // 密码
-    'password'        => 'Higgses601a@Mysql8',
+    'password'        => '5kcrm_dev_adminer',
     // 端口
     'hostport'        => '4406',
     // 连接dsn
