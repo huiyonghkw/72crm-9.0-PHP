@@ -18,6 +18,7 @@ return [
     'params'          => [
         \PDO::ATTR_PERSISTENT => true,
         \PDO::ATTR_CASE => \PDO::CASE_LOWER,
+        'MYSQL_ATTR_USE_BUFFERED_QUERY' => true,
         //http://www.yiduhao.com/index/news/news_detail.html?id=84
     ],
     // 数据库编码默认采用utf8
