@@ -478,7 +478,7 @@ CREATE TABLE `5kcrm_admin_system` (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
 
-INSERT INTO `5kcrm_admin_system` VALUES ('1', 'name', '悟空CRM', '网站名称');
+INSERT INTO `5kcrm_admin_system` VALUES ('1', 'name', '希格斯CRM', '网站名称');
 INSERT INTO `5kcrm_admin_system` VALUES ('2', 'logo', '', '企业logo');
 
 CREATE TABLE `5kcrm_admin_user` (

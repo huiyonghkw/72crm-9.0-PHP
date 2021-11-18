@@ -5,10 +5,10 @@
     :before-close="handleClose"
     width="700px">
     <div class="position-relative">
-      <div>您可以联系悟空官方开通悟空呼叫中心服务。开通后您可以获得以下服务：</div>
+      <div>您可以联系希格斯官方开通希格斯呼叫中心服务。开通后您可以获得以下服务：</div>
       <flexbox class="phone-info">
         <img src="@/assets/img/system/app/phone.png" >
-        官方服务热线：400-0812-558
+        官方服务热线：18784440886
       </flexbox>
       <el-table
         :data="tableData"

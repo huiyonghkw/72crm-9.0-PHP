@@ -82,7 +82,7 @@ class Excel extends Common
 		$objProps->setCategory("5kcrm"); //种类
 		$objPHPExcel->setActiveSheetIndex(0); //设置当前的sheet
 		$objActSheet = $objPHPExcel->getActiveSheet();
-		$objActSheet->setTitle('悟空软件导入模板'.date('Y-m-d',time())); //设置sheet的标题	
+		$objActSheet->setTitle('希格斯软件导入模板'.date('Y-m-d',time())); //设置sheet的标题	
 
 		//存储Excel数据源到其他工作薄
 		$objPHPExcel->createSheet();
@@ -210,7 +210,7 @@ class Excel extends Common
 			case 'crm_contract' : $types_name = '合同信息'; break;
 			case 'crm_receivables' : $types_name = '回款信息'; break;
 			case 'admin_user' : $types_name = '员工信息'; break;
-			default : $types_name = '悟空软件'; break;
+			default : $types_name = '希格斯软件'; break;
 		}		
         $content = $types_name.'（*代表必填项；时间格式：2001-01-01 19:01:01）';
         $objActSheet->setCellValue('A1', $content);
