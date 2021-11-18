@@ -16,8 +16,8 @@ return [
     'dsn'             => '',
     // 数据库连接参数
     'params'          => [
-        PDO::ATTR_CASE              => PDO::CASE_LOWER,
-        PDO::ATTR_EMULATE_PREPARES  => true,
+        \PDO::ATTR_PERSISTENT => true,
+        \PDO::ATTR_CASE => \PDO::CASE_LOWER,
         //http://www.yiduhao.com/index/news/news_detail.html?id=84
     ],
     // 数据库编码默认采用utf8
