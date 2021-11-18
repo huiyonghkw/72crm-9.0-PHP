@@ -33,7 +33,7 @@ class AuthenticateBehavior
         $authKey = $header['authkey'];
         
 		$paramArr = $request->param();
-        $platform = $paramArr['platform'] ? '_'.$paramArr['platform'] : ''; //请求分类(mobile,ding)
+        $platform = isset($paramArr['platform']) ? '_'.$paramArr['platform'] : ''; //请求分类(mobile,ding)
         $cache = cache('Auth_'.$authKey.$platform); 
         $userInfo = $cache['userInfo'];
     	
