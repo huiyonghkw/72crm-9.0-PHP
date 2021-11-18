@@ -82,7 +82,7 @@ class Work extends Common
      * @param
      * @return
      */	
-	public function updateDataById($param)
+	public function updateDataById($param, $id = 0)
 	{
 		$map['work_id'] = $param['work_id'];
 		$workInfo = $this->where(['work_id' => $param['work_id']])->find();

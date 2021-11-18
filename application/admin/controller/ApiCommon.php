@@ -25,7 +25,7 @@ class ApiCommon extends Common
         $authKey = $header['authkey'];
         $sessionId = $header['sessionid'];
         $paramArr = $request->param();
-        $platform = $paramArr['platform'] ? '_'.$paramArr['platform'] : ''; //请求平台(mobile,ding)
+        $platform = isset($paramArr['platform']) ? '_'.$paramArr['platform'] : ''; //请求平台(mobile,ding)
         $cache = cache('Auth_'.$authKey.$platform);         
         
         // 校验sessionid和authKey
